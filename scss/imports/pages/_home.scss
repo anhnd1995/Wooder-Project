@@ -1,5 +1,8 @@
 section {
   padding: 80px 0;
+  @include mobile {
+    padding: 20px 0;
+  }
 }
 
 .slider {
@@ -12,7 +15,7 @@ section {
     &-item {
       position: relative;
       width: 100%;
-      // display: none;
+      display: none;
       .text {
         position: absolute;
         top: 50%;
@@ -90,9 +93,9 @@ section {
       }
     }
 
-    // .active {
-    //   display: block;
-    // }
+    .active {
+      display: block;
+    }
   }
 
   &__bottom {
@@ -493,7 +496,7 @@ section {
 
 .intro {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../img/bg2.jpg);
+    url(../img/bg2.jpg);
   background-repeat: no-repeat;
   max-width: 100%;
   height: 500px;

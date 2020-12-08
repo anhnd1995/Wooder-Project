@@ -49,7 +49,7 @@
     <main class="mainwrapper homepage">
       <section class="slider" id="slider">
         <div class="slider__content">
-          <div class="slider__content-item">
+          <div class="slider__content-item active">
             <div class="text">
               <h2>wooder</h2>
               <a href="" class="btn border">
@@ -254,23 +254,23 @@
           <div class="gallery__img">
             <div class="gallery__carousel" itemscope data-pswp-uid="1">
               <figure class="gallery__img-item">
-                  <a href="./img/carousel1.jpg" data-size="634x400"></a>
+                <a href="./img/carousel1.jpg" data-size="634x400"></a>
                 <img src="./img/gallery1.jpg" alt="" />
               </figure>
               <figure class="gallery__img-item">
-                  <a href="./img/carousel2.jpg" data-size="634x400"></a>
+                <a href="./img/carousel2.jpg" data-size="634x400"></a>
                 <img src="./img/gallery2.jpg" alt="" />
               </figure>
               <figure class="gallery__img-item img-middle">
-                  <a href="./img/carousel3.jpg" data-size="634x822"></a>
+                <a href="./img/carousel3.jpg" data-size="634x822"></a>
                 <img src="./img/gallery3.jpg" alt="" />
               </figure>
               <figure class="gallery__img-item">
-                  <a href="./img/carousel4.jpg" data-size="634x400"></a>
+                <a href="./img/carousel4.jpg" data-size="634x400"></a>
                 <img src="./img/gallery4.jpg" alt="" />
               </figure>
               <figure class="gallery__img-item">
-                  <a href="./img/carousel1.jpg" data-size="634x400"></a>
+                <a href="./img/carousel1.jpg" data-size="634x400"></a>
                 <img src="./img/gallery5.jpg" alt="" />
               </figure>
             </div>
@@ -331,13 +331,12 @@
       </section>
 
       <section class="carousel">
-
         <div class="carousel-bottom">
-            <img src="./img/carousel3.jpg" alt="" />
-            <img src="./img/carousel4.jpg" alt="" />
-            <img src="./img/carousel1.jpg" alt="" />
-            <img src="./img/carousel2.jpg" alt="" />
-            <img src="./img/carousel3.jpg" alt="" />
+          <img src="./img/carousel3.jpg" alt="" />
+          <img src="./img/carousel4.jpg" alt="" />
+          <img src="./img/carousel1.jpg" alt="" />
+          <img src="./img/carousel2.jpg" alt="" />
+          <img src="./img/carousel3.jpg" alt="" />
         </div>
       </section>
     </main>
@@ -368,40 +367,58 @@
     </div>
 
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
         </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./dest/jsmain.min.js"></script>
