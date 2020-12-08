@@ -1,0 +1,72 @@
+// footer {
+// 	@include desktop {
+		
+// 	}
+// 	@include tablet {
+		
+// 	}
+// 	@include mobile {
+		
+// 	}
+// 	@include mobile-xxs {
+		
+// 	}
+// }
+
+footer{
+    background-color: #000;
+    color: white;
+    height: 60px;
+   
+    
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        font-size: 12px;
+
+        .copyright{
+            opacity: 0.6;
+        }
+
+        .logo{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity : 1;
+        }
+
+        .backToTop{
+            text-transform: uppercase;
+            opacity: 0.6;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover{
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+    }
+
+    @include mobile{
+        .container{
+            
+            font-size: 8px;
+    
+            .copyright{
+                
+            }
+    
+            .logo{
+             img{
+                 width: 50%;
+             }
+            }
+    
+            .backToTop{}}
+              
+    }
+}

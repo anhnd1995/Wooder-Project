@@ -1,0 +1,85 @@
+html, body{
+    font-family: 'regular';
+    scroll-behavior: smooth;
+}
+
+
+
+.textbox{
+    margin-bottom: 10px;
+    h2{
+        font-size: $fs-title;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+        position: relative;
+
+        &:before{
+            content: "";
+            height: 1px;
+            width: 4vw;
+            display: block;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            right: 317px;
+        }
+    }
+
+    p{
+        font-size: $fs-1;
+        font-family: 'normal';
+        width: 300px;
+        margin-bottom: 40px;
+        
+    }
+
+    a{   
+          
+        img{
+            transition: 1s;  
+            display: inline;
+        }
+
+        &:hover{
+            img{
+                transform: translateX(50%);
+            }
+        }
+    }
+
+    
+    @include mobile{
+        h2{
+            font-size: 32px;
+        }
+
+        p{
+            font-size: $fs-0;
+            width: 100%;
+        }
+    }
+    
+}
+
+.--right{
+    h2{
+        text-align: right;
+
+        &:before{
+            left: 317px;
+        }
+    }
+
+    a{
+        float: right;
+    }
+    
+}
+
+
+.--yellow{
+    h2{
+        color: $color-primary;
+    }
+}
+
